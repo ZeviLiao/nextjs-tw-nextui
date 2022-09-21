@@ -1,6 +1,7 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import { Button } from "@nextui-org/react";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <div className="border border-blue-400 p-3"> hello </div>
+        <Button>Click me</Button>
       </main>
 
       <footer className="flex h-24 w-full items-center justify-center border-t">
@@ -21,12 +23,12 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
